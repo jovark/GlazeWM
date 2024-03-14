@@ -183,6 +183,9 @@ namespace GlazeWM.Domain.Windows
         // TODO: Temporary fix for managing Flow Launcher until a force manage command is added.
         if (processName == "Flow.Launcher" && title == "Flow.Launcher")
           return true;
+
+        if (processName == "Fluent Search" && title == "FluentSearch")
+          return true;
       }
 
       // Ignore windows that are hidden.
